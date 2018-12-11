@@ -532,9 +532,6 @@ void alternativas(){
             if(pega_clique_passa(x, x + al_get_bitmap_width(acre), y + al_get_bitmap_height(acre), y)){
                 printf("\n\nClique OK\n\n");
                 al_clear_to_color(al_map_rgb(0, 0, 0));
-                /*al_destroy_bitmap(sao_paulo);
-                al_destroy_bitmap(acre);
-                al_destroy_bitmap(espirito_santo);*/
                 n_alternativa++;
                 passa_pin++;
 
@@ -573,9 +570,6 @@ void alternativas(){
 
         if(pega_clique_passa(x, x + al_get_bitmap_width(amapa), y + al_get_bitmap_height(amapa), y)){
             al_clear_to_color(al_map_rgb(0, 0, 0));
-            /*al_destroy_bitmap(rio_de_janeiro);
-            al_destroy_bitmap(mato_grosso);
-            al_destroy_bitmap(amapa);*/
             n_alternativa++;
             passa_pin++;
 
@@ -592,9 +586,6 @@ void alternativas(){
 
         if(pega_clique_passa(x, x + al_get_bitmap_width(amazonas), y + al_get_bitmap_height(amazonas), y)){
             al_clear_to_color(al_map_rgb(0, 0, 0));
-            /*al_destroy_bitmap(rio_grande_do_norte);
-            al_destroy_bitmap(amazonas);
-            al_destroy_bitmap(rio_grande_do_sul);*/
             n_alternativa++;
             passa_pin++;
 
@@ -650,21 +641,6 @@ void desenha_estado(){
     al_destroy_bitmap(amazonas);
     al_destroy_bitmap(bahia);
     al_destroy_bitmap(ceara);
-    /*al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);
-    al_destroy_bitmap(acre);*/
 }
 
 void transicao_nivel_2(){
@@ -917,50 +893,50 @@ void explica_planetas(){
 
 	al_draw_bitmap(explica_planeta[0], 0, 0, 0);
 	al_flip_display();
-	al_rest(1.0);
+	al_rest(10.0);
 	mover_bitmap_em_x(avaliacao_planeta[0], 0, -2560);
 	al_destroy_bitmap(avaliacao_planeta[0]);
 
     al_draw_bitmap(explica_planeta[1], 0, 0, 0);
 	al_flip_display();
-	al_rest(1.0);
+	al_rest(10.0);
 	mover_bitmap_em_x(avaliacao_planeta[1], 0, -2560);
 	al_destroy_bitmap(avaliacao_planeta[1]);
 
     al_draw_bitmap(explica_planeta[2], 0, 0, 0);
 	al_flip_display();
-	al_rest(1.0);
+	al_rest(10.0);
 	mover_bitmap_em_x(avaliacao_planeta[2], 0, -2560);
 	al_destroy_bitmap(avaliacao_planeta[2]);
 
     al_draw_bitmap(explica_planeta[3], 0, 0, 0);
 	al_flip_display();
-	al_rest(1.0);
+	al_rest(10.0);
 	mover_bitmap_em_x(avaliacao_planeta[3], 0, -2560);
 	al_destroy_bitmap(avaliacao_planeta[3]);
 
     al_draw_bitmap(explica_planeta[4], 0, 0, 0);
 	al_flip_display();
-	al_rest(1.0);
+	al_rest(10.0);
 	mover_bitmap_em_x(avaliacao_planeta[4], 0, -2560);
 	al_destroy_bitmap(avaliacao_planeta[4]);
 
     al_draw_bitmap(explica_planeta[5], 0, 0, 0);
 	al_flip_display();
-	al_rest(1.0);
+	al_rest(10.0);
 	mover_bitmap_em_x(avaliacao_planeta[5], 0, -2560);
 	al_destroy_bitmap(avaliacao_planeta[5]);
 
     al_draw_bitmap(explica_planeta[6], 0, 0, 0);
 	al_flip_display();
-	al_rest(1.0);
+	al_rest(10.0);
 	mover_bitmap_em_x(avaliacao_planeta[6], 0, -2560);
 	al_destroy_bitmap(avaliacao_planeta[6]);
 
     al_draw_bitmap(explica_planeta[7], 0, 0, 0);
 	al_flip_display();
-	al_rest(1.0);
-	mover_bitmap_em_x(avaliacao_planeta[7], 0, -2560);
+	al_rest(10.0);
+	mover_bitmap_em_x(avaliacao_planeta[7], 0, -5120);
 	al_destroy_bitmap(avaliacao_planeta[7]);
 
 	controle++;
