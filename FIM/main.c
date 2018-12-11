@@ -971,6 +971,14 @@ int main(){
 	if(!inicializar()){
 		return -1;
 	}
+ al_install_audio();
+        al_init_acodec_addon();
+        al_reserve_samples(1);
+
+        ALLEGRO_AUDIO_STREAM *som = NULL;
+        som = al_load_audio_stream("back.wav", 4, 1024);
+        al_attach_audio_stream_to_mixer(som, al_get_default_mixer());
+        al_set_audio_stream_playmode(som, ALLEGRO_PLAYMODE_LOOP);
 
 
 
